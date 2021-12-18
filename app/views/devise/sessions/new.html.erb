@@ -1,26 +1,43 @@
-<h2>Log in</h2>
-
+<h1 class="login-title">Please login to continue</h1>
+<div class="login-form">
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <div class="login-form-field">
+    <%= f.label :email, class:"login-form-text" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"login-input" %>
   </div>
 
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
+    <div class="login-form-field">
+    <%= f.label :password, class:"login-form-text" %>
+    <%= f.password_field :password, autocomplete: "current-password", class:"login-input" %>
   </div>
 
   <% if devise_mapping.rememberable? %>
-    <div class="field">
+    <div class="login-form-field-remember">
       <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+      <%= f.label :remember_me, class:"login-form-text" %>
     </div>
   <% end %>
 
-  <div class="actions">
-    <%= f.submit "Log in" %>
+  <div class="actions flex justify-center">
+    <%= f.submit "Log in", class: "login-form-button" %>
   </div>
 <% end %>
 
 <%= render "devise/shared/links" %>
+</div>
+
+<!-- 
+<h1 class="login-title">Please login to continue</h1>
+<form action="#" method="POST" class="login-form" style="background-image: url('./Images/Backgrounds/pikachu.png');">
+    <div class="login-form-field">
+        <label for="login-email" class="login-form-text">Email: </label>
+        <input type="email" class="login-input" placeholder="Email" required>
+    </div>
+    <div class="login-form-field">
+        <label for="login-password" class="login-form-text">Password: </label>
+        <input type="password" class="login-input" placeholder="Password" required>
+    </div>
+    <button type="button" onclick="document.location.href='user.html'" class="login-form-button">Login</button>
+    <button type="button" onclick="document.location.href='create_user.html'" class="login-form-register">Don't have an account yet? Register now</button>
+</form>
+-->

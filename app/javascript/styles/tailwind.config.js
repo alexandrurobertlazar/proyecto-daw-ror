@@ -1,7 +1,9 @@
 module.exports = {
   mode: "jit", // Build más rápido
   purge: {
-    content: ["./app/**/*.html.erb",], // Quita lo que no usamos
+    content: ["./app/**/*.html.erb",
+              "./app/helpers/**/*.rb",
+              "./app/javascript/**/*.js",], // Quita lo que no usamos
   },
   darkMode: "class", // or 'media' or 'class'
   theme: {
@@ -57,4 +59,7 @@ module.exports = {
   },
   variants: [],
   plugins: [],
+  corePlugins: {
+    preflight: false,
+  }
 };
