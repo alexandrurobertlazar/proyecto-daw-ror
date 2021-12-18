@@ -1,7 +1,7 @@
 module.exports = {
   mode: "jit", // Build más rápido
   purge: {
-    content: ["./app/views/*.html.erb", "./app/javascript/*.js"], // Quita lo que no usamos
+    content: ["./app/**/*.html.erb",], // Quita lo que no usamos
   },
   darkMode: "class", // or 'media' or 'class'
   theme: {
