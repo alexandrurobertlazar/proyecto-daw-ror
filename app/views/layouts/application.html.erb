@@ -17,4 +17,29 @@
     <%= yield %>
     <footer><%= render 'layouts/footer' %></footer>
   </body>
+
+  <script>
+    /* Funciones para modo oscuro */
+    const html = document.querySelector("html");
+
+    const toggleDarkMode = function() {
+        if (sessionStorage.getItem("darkMode") == "true"){
+            html.classList.remove("dark");
+            sessionStorage.setItem("darkMode","false");
+        } else {
+            html.classList.add("dark")
+            sessionStorage.setItem("darkMode", "true")
+        } 
+    }
+
+    const checkDarkMode = function () {
+        if (sessionStorage.getItem("darkMode") == "true") {
+            html.classList.add("dark")
+        } else {
+            html.classList.remove("dark");
+        }
+    }
+
+    checkDarkMode()
+  </script> 
 </html>

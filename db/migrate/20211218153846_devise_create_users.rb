@@ -15,12 +15,6 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.1]
       t.datetime :remember_created_at
 
       ## Datos necesarios
-      t.string :name,              null: false, default: ""
-      t.string :address,           null: false, default: ""
-      t.string :country,           null: false, default: ""
-      t.string :phonenumber,       null: false, default: ""
-      t.string :city,              null: false, default: ""
-      t.string :postcode,          null: false, default: ""
       t.string :image,             null: false, default: ""
 
       ## Trackable
