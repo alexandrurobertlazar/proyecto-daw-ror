@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'article/article-about-us'
   get 'checkout/checkout'
   get 'auth/user'
