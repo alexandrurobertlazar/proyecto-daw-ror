@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  price: 9.99
+  oldPrice: 9.99
+  description: MyString
+  product_attributes: MyString
+  quality: MyString
+  company: MyString
+  delivery: MyString
+  delivery_time: 2021-12-18 18:26:46
+  image: 
+  stock: 1
+  bestSeller: false
+
+two:
+  name: MyString
+  price: 9.99
+  oldPrice: 9.99
+  description: MyString
+  product_attributes: MyString
+  quality: MyString
+  company: MyString
+  delivery: MyString
+  delivery_time: 2021-12-18 18:26:46
+  image: 
+  stock: 1
+  bestSeller: false
