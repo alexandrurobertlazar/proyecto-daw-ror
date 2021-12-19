@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:92ac789eb2e8cf47d7ecd00d2200129df7b22486686408941e8845c6a5e02d50
-size 537
+#!/usr/bin/env ruby.exe
+APP_ROOT = File.expand_path('..', __dir__)
+Dir.chdir(APP_ROOT) do
+  yarn = ENV["PATH"].split(File::PATH_SEPARATOR).
+    select { |dir| File.expand_path(dir) != __dir__ }.
+    product(["yarn", "yarn.cmd", "yarn.ps1"]).
+    map { |dir, file| File.expand_path(file, dir) }.
+    find { |file| File.executable?(file) }
+
+  if yarn
+    exec yarn, *ARGV
+  else
+    $stderr.puts "Yarn executable was not detected in the system."
+    $stderr.puts "Download Yarn at https://yarnpkg.com/en/docs/install"
+    exit 1
+  end
+end
