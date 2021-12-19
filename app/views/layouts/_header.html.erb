@@ -110,6 +110,17 @@
                 <input type="text" class="nav-search-input searchInput"
                     placeholder="Search for a product or a category" />
             </div>
+            
+            <% if !user_signed_in? %>
+                <a href="../auth/login.html" class="nav-element hidden tl:flex">
+                    <!-- Normal Login -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user normal-icon" width="36"
+                        height="36" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <circle cx="12" cy="7" r="4" />
+                        <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                    </svg>
 
             <a href="/users/sign_in" class="nav-element hidden tl:flex">
                 <!-- Normal Login -->
@@ -121,16 +132,17 @@
                     <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
                 </svg>
 
-                <!-- Dark Login -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user dark-icon" width="36"
-                    height="36" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round"
-                    stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <circle cx="12" cy="7" r="4" />
-                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                </svg>
-                <div class="nav-text">Sign in</div>
-            </a>
+                    <!-- Dark Login -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user dark-icon" width="36"
+                        height="36" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <circle cx="12" cy="7" r="4" />
+                        <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                    </svg>
+                    <div class="nav-text">My user</div>
+                </a>
+            <% end %>
 
             <a href="../cart/cart.html" class="nav-element">
                 <!-- Cart normal -->
