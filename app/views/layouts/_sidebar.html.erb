@@ -1,6 +1,6 @@
     <a href="javascript:void(0)" class="close-button" onclick="closeNav()">&times;</a>
     <div class="sidenav-element-title">
-        <a href=login.html> Sign in </a>
+        <a href="../auth/login.html"> Sign in </a>
     </div>
     <div class="sidenav-element-title">
         Contact Us
@@ -58,7 +58,7 @@
             <div class="sidenav-subcategory-container" style="display: none;" id="sideBarCat${key}">`
             Object.entries(value.subcategories).forEach((entry) => {
                 const [key,value] = entry
-                htmlContents += `<a class="sidenav-subcategory-element" href="category.html?name=${value}">${value}</a>`
+                htmlContents += `<a class="sidenav-subcategory-element" href="../category/category.html?name=${value}">${value}</a>`
             })
             htmlContents += `</div>`;
             
