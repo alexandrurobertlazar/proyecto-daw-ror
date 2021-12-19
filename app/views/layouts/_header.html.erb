@@ -111,7 +111,7 @@
                     placeholder="Search for a product or a category" />
             </div>
 
-            <a href="../auth/login.html" class="nav-element hidden tl:flex">
+            <a href="/users/sign_in" class="nav-element hidden tl:flex">
                 <!-- Normal Login -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user normal-icon" width="36"
                     height="36" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round"
@@ -205,15 +205,14 @@
             </div>
         </div>
         
-            <figure class="unselectable pb-5 mt-24">
-                
-                <%= link_to(image_tag("logo_darkmode.png", 
-                class: "lg:w-4/12 md:w-5/12 w-6/12 mx-auto object-center cursor-pointer invisible hidden dark:visible dark:flex"),
-                root_path) %>
-                <%= image_tag("logo.png", 
-                class: "lg:w-4/12 md:w-5/12 w-6/12 mx-auto object-center cursor-pointer dark:invisible dark:hidden") %>
-                
-            </figure>
+        <figure class="unselectable pb-5 mt-24">
+            <%= link_to(image_tag("logo_darkmode.png", 
+            class: "lg:w-4/12 md:w-5/12 w-6/12 mx-auto object-center cursor-pointer invisible hidden dark:visible dark:flex"),
+            root_path) %>
+            <%= link_to(image_tag("logo.png", 
+            class: "lg:w-4/12 md:w-5/12 w-6/12 mx-auto object-center cursor-pointer dark:invisible dark:hidden"),
+            root_path) %>
+        </figure>
         
     </nav>
     <nav class="nav-category"></nav>

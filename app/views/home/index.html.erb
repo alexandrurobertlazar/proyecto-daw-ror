@@ -30,6 +30,26 @@
     <!-- Three products from best selling products -->
     <div class="bestselling-product-panel">
         <div class="bestselling-product-card">
+            <% @products.each do |product| %>
+                <% if product.bestSeller == true %>
+                    <a href="" class="bestselling-product">
+                        <div class="bestselling-product-image-container">
+                            <img loading="lazy" src="" class="bestselling-product-image" width="240" height="240" alt="Product Image"> 
+                        </div>                        
+                        <div>
+                            <h2 class="bestselling-product-title"><%= product.name %></h2>
+                            <h4 class="bestselling-product-description"><%= product.description %></h4>
+                        </div>
+                        <div class="buy-container">
+                            <div class="cost-panel">
+                                <p class="cost"><%= product.price %> EUR</p>
+                                <p class="previous-cost" id="discount-prod-3"><%= product.oldPrice %> EUR</p>
+                            </div>
+                            <button class="buynow-button">Buy now</button>
+                        </div>
+                    </a>
+                <% end %>
+            <% end %>
         </div>
     </div>
 </div>
