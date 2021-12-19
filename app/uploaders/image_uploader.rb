@@ -1,10 +1,3 @@
-class ImageUploader < Shrine
-
-    ## Valida si se envía una foto o no
-    ## También revisa su tamaño y demás
-    Attacher.validate do
-        validate_size      1..5*1024*1024 # Maximo 5GB de tamaño
-        validate_mime_type %w[image/jpeg image/png image/webp image/tiff]
-        validate_extension %w[jpg jpeg png webp tiff tif]
-    end
-end
+version https://git-lfs.github.com/spec/v1
+oid sha256:e837c67de9c84e37fa98afec2098676edfc28d95b694be5bbe49e6ec75535fa2
+size 348

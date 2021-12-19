@@ -1,10 +1,3 @@
-class MoreUserData < ActiveRecord::Migration[6.1]
-  def change
-      add_column :users, :name, :string         
-      add_column :users, :address, :string       
-      add_column :users, :country, :string       
-      add_column :users, :phonenumber, :string     
-      add_column :users, :city, :string          
-      add_column :users, :postcode, :string             
-  end
-end
+version https://git-lfs.github.com/spec/v1
+oid sha256:1d7c42e5745b6d2c6869921e8eed082ce3f7a1c974b534cf54abf482c0c27201
+size 381

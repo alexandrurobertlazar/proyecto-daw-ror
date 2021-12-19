@@ -1,13 +1,3 @@
-require "shrine"
-require "shrine/storage/file_system"
- 
-Shrine.storages = { 
-  cache: Shrine::Storage::FileSystem.new("public", prefix: "uploads/cache"), # temporary 
-  store: Shrine::Storage::FileSystem.new("public", prefix: "uploads"),       # permanent 
-}
- 
-Shrine.plugin :activerecord  # or :sequel
-Shrine.plugin :cached_attachment_data # for retaining the cached file across form redisplays 
-Shrine.plugin :restore_cached_data # re-extract metadata when attaching a cached file 
-Shrine.plugin :validation
-Shrine.plugin :validation_helpers
+version https://git-lfs.github.com/spec/v1
+oid sha256:47ca87fe4954b4511329018e43863b206accbcca85ba30f6ad204237ee437401
+size 544

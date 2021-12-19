@@ -1,4 +1,3 @@
-#!/usr/bin/env ruby.exe
-APP_PATH = File.expand_path('../config/application', __dir__)
-require_relative "../config/boot"
-require "rails/commands"
+version https://git-lfs.github.com/spec/v1
+oid sha256:06d3afa99583fdd69c247ac76ab41bc462f7ceffac0b0f58bc60213408eeae40
+size 145

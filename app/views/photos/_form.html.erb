@@ -1,30 +1,3 @@
-<%= form_with(model: photo) do |form| %>
-  <% if photo.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(photo.errors.count, "error") %> prohibited this photo from being saved:</h2>
-
-      <ul>
-        <% photo.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
-  </div>
-
-  <div class="field">
-    <%= form.label :image %>
-    <!-- Si se te olvido ponerle título o datos esto te guarda la imagen que pusiste -->
-    <%= image_tag form.object.image_url if form.object.cached_image_data %>
-    <%= form.hidden_field :image, value:form.object.cached_image_data %>
-    <%= form.file_field :image %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
+version https://git-lfs.github.com/spec/v1
+oid sha256:cf9c609f93e17229268a28574cea28b1206a0c18b001b76f16d23dbaa6a97e78
+size 853

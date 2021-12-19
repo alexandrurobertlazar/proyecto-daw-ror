@@ -1,18 +1,3 @@
-Rails.application.routes.draw do
-  resources :photos
-  resources :products
-  devise_for :users
-  get 'article/article_about_us'
-  get 'checkout/checkout'
-  get 'auth/user'
-  get 'auth/create_user'
-  get 'auth/login'
-  get 'cart/cart'
-  get 'search/search_grid'
-  get 'search/search'
-  get 'category/category_grid'
-  get 'category/category'
-  get 'product/product'
-  get 'home/index'
-  root 'home#index'
-end
+version https://git-lfs.github.com/spec/v1
+oid sha256:971a0f4b81150c45f5c5a2cc1841058e673a80ddf6caf3943509020a0fcdc56a
+size 407

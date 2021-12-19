@@ -1,4 +1,3 @@
-#!/usr/bin/env ruby.exe
-require_relative "../config/boot"
-require "rake"
-Rake.application.run
+version https://git-lfs.github.com/spec/v1
+oid sha256:d482a2eca7d54f4bc40cce6639b79d0118daa1fcf47875ce1566e21a44a41ac4
+size 94
