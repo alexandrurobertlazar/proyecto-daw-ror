@@ -10,31 +10,51 @@
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div>
-    <%= f.label :email, class:"font-bold" %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "create-user-form-input" %>
-  </div>
-
-  <div>
     <%= f.label :name, class:"font-bold" %><br />
     <%= f.text_field :name, autofocus: true, autocomplete: "name", class: "create-user-form-input" %>
   </div>
 
+  <div>
+    <%= f.label :email, class:"font-bold" %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "create-user-form-input" %>
+  </div>
+
   <!-- Añadir todos los demás campos -->
   <div>
-    <%= f.label :password %>
+    <%= f.label :address, class:"font-bold" %><br />
+    <%= f.text_field :address, autofocus: true, autocomplete: "address", class: "create-user-form-input" %>
+  </div>
+
+  <div>
+    <%= f.label :country, class:"font-bold" %><br />
+    <%= f.text_field :country, autofocus: true, autocomplete: "country", class: "create-user-form-input" %>
+  </div>
+
+  <div>
+    <%= f.label :phonenumber, class:"font-bold" %><br />
+    <%= f.text_field :phonenumber, autofocus: true, autocomplete: "phonenumber", class: "create-user-form-input" %>
+  </div>
+
+  <div>
+    <%= f.label :postcode, class:"font-bold" %><br />
+    <%= f.text_field :postcode, autofocus: true, autocomplete: "postcode", class: "create-user-form-input" %>
+  </div>
+
+  <div>
+    <%= f.label :password, class:"font-bold" %>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
+    <%= f.password_field :password, autocomplete: "new-password", class: "create-user-form-input" %>
   </div>
 
   <div>
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+    <%= f.label :password_confirmation, class:"font-bold" %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "create-user-form-input" %>
   </div>
 
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "Sign up", class: "create-user-form-submit" %>
   </div>
 <% end %>
 
