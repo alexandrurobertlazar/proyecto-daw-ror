@@ -1,4 +1,4 @@
 class ArticleController < ApplicationController
-  def article-about-us
+  def article_about_us
   end
 end

@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :products
   devise_for :users
-  get 'article/article-about-us'
+  get 'article/article_about_us'
   get 'checkout/checkout'
   get 'auth/user'
   get 'auth/create_user'
