@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_18_205113) do
+ActiveRecord::Schema.define(version: 2021_12_19_145705) do
+
+  create_table "photos", force: :cascade do |t|
+    t.string "title"
+    t.text "image_data"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "products", force: :cascade do |t|
     t.string "name"
@@ -22,7 +29,7 @@ ActiveRecord::Schema.define(version: 2021_12_18_205113) do
     t.string "company"
     t.string "delivery"
     t.datetime "delivery_time"
-    t.binary "image"
+    t.text "image_data"
     t.integer "stock"
     t.boolean "bestSeller"
     t.datetime "created_at", precision: 6, null: false
@@ -37,7 +44,7 @@ ActiveRecord::Schema.define(version: 2021_12_18_205113) do
     t.datetime "remember_created_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.binary "image"
+    t.text "image_data"
     t.string "name"
     t.string "address"
     t.string "country"

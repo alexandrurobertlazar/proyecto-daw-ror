@@ -71,6 +71,14 @@
     <%= form.check_box :bestSeller %>
   </div>
 
+   <div class="field">
+    <%= form.label :image %>
+    <!-- Si se te olvido ponerle título o datos esto te guarda la imagen que pusiste -->
+    <%= image_tag form.object.image_url if form.object.cached_image_data %>
+    <%= form.hidden_field :image, value:form.object.cached_image_data %>
+    <%= form.file_field :image %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
