@@ -1,1 +1,1 @@
-Proyecto del 3er sprint del grupo 2 de DAW
+Proyecto del tercer sprint del grupo 2 de DAW
