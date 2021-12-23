@@ -20,4 +20,4 @@ Con lo aprendido en el proyecto anterior, estábamos mucho más cómodos con rub
 ## 4<sup>o</sup> repositorio - https://github.com/alexandrurobertlazar/proyecto-daw-ror
 
 Subimos el proyecto a la plataforma de Oracle Cloud e hicimos unos cambios finales en el proyecto.
-Para ello, se ha utilizado una instancia de máquina virtual con Oracle Linux, donde se ha tenido que configurar el entorno de Rails manualmente, descargar los contenidos de este repositorio y crear el servicio correspondiente en el sistema operativo para que se mantenga en ejecución.
+Para ello, se ha utilizado una instancia de máquina virtual con Oracle Linux, donde se ha tenido que configurar el entorno de Rails manualmente, descargar los contenidos de este repositorio y crear el servicio correspondiente en el sistema operativo para que se mantenga en ejecución. En cualquier caso, es este último repositorio el que debe utilizarse para la evaluación, los otros tres estando puestos para ver los commits realizados por cada uno.
