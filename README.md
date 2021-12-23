@@ -1,5 +1,8 @@
 # Grupo 2 - Tercer Sprint
 
+### Nota importante: este repositorio utiliza Git LFS, por lo que, al descargarlo, es necesario usar la siguiente orden en la carpeta del proyecto:
+```git lfs checkout```
+
 ## 1<sup>er</sup> repositorio - https://github.com/alexandrurobertlazar/proyecto-daw1
 
 La idea principal era crear una api en ruby que devolviera a nuestro proyecto los datos necesarios. Comenzamos el desarrollo pero vimos que realmente no aprenderíamos mucho de ruby and rails siguiendo esta estructura de proyecto. Entonces decidimos volver a empezar con un repositorio desde cero y transladar todo nuestro proyecto a rails.
